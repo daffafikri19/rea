@@ -134,7 +134,7 @@
     "jscpd": "node scripts/ci/static-check-report.mjs duplicates",
     "jscpd:details": "jscpd src/ tests/ --no-tips",
     "scan:todos": "node scripts/scan-todos.mjs",
-    "start": "node scripts/rea.mjs mcp",
+    "start": "node api.js && node scripts/rea.mjs mcp",
     "test": "npm run test:with-build",
     "test:with-build": "npm run test:prepare && vitest run",
     "test:run": "vitest run",
